@@ -1,0 +1,114 @@
+/* Estilos base para todos los elementos */
+* {
+  box-sizing: border-box; /* Incluye padding y border en el tamaño total */
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Quicksand", sans-serif; /* Fuente general */
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Estilo del cuerpo de la web */
+body {
+  min-height: 100vh; /* Altura mínima igual al alto de la pantalla */
+  height: auto;
+}
+
+/* Encabezado con imagen de fondo */
+header {
+  background: url(./imagenes/banner-2.jpg) no-repeat center center;
+  background-size: cover; /* Que cubra todo el área */
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3%;
+  text-align: center;
+}
+
+/* Sección destacada en azul claro */
+article {
+  background-color: skyblue;
+  color: black;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3%;
+  text-align: center;
+}
+
+/* Contenedor principal */
+main {
+  height: auto;
+  background-color: whitesmoke; /* Fondo claro */
+}
+
+/* Pie de página */
+footer {
+  background-color: black;
+  color: white;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3%;
+}
+
+/* Bloques horizontales con contenido */
+.block {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Contenedor con ancho limitado */
+.container {
+  min-width: 200px;
+  max-width: 51%;
+  box-sizing: border-box;
+}
+
+/* Sección con fondo verde llamativo */
+.green-layout {
+  background-color: greenyellow;
+  min-width: 100%;
+  width: 100%;
+  grid-column: span 2;
+  text-align: center;
+}
+
+/* Contenedor de las imágenes verdes */
+.green-layout-img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* Imágenes pequeñas (bloque final) */
+.iomag {
+  width: 25%; /* 4 por fila en escritorio */
+}
+
+/* Adaptación a pantallas pequeñas */
+@media (max-width: 600px) {
+  .iomag {
+    width: 50%; /* 2 por fila en móvil */
+  }
+  .footer {
+    flex-direction: column; /* Pie de página en columna */
+    text-align: center;
+  }
+}
+
+/* Estilo de enlaces en el pie de página */
+footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 5px;
+}
